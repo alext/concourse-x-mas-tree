@@ -17,7 +17,7 @@ jobs:
   - task: shine
     config:
       platform: linux
-      image: "docker:///ubuntu"
+      image: "docker:///alpine"
       run:
         path: false
 - name: +=+=+=
@@ -29,7 +29,7 @@ jobs:
   - task: shine
     config:
       platform: linux
-      image: "docker:///ubuntu"
+      image: "docker:///alpine"
       run:
         path: sleep
         args: [19]
@@ -42,7 +42,7 @@ jobs:
   - task: shine
     config:
       platform: linux
-      image: "docker:///ubuntu"
+      image: "docker:///alpine"
       run:
         path: sleep
         args: [10]
@@ -55,7 +55,7 @@ jobs:
   - task: shine
     config:
       platform: linux
-      image: "docker:///ubuntu"
+      image: "docker:///alpine"
       run:
         path: sleep
         args: [19]
@@ -68,7 +68,7 @@ jobs:
   - task: shine
     config:
       platform: linux
-      image: "docker:///ubuntu"
+      image: "docker:///alpine"
       run:
         path: sleep
         args: [10]
@@ -81,7 +81,7 @@ jobs:
   - task: shine
     config:
       platform: linux
-      image: "docker:///ubuntu"
+      image: "docker:///alpine"
       run:
         path: sleep
         args: [19]
@@ -95,7 +95,7 @@ jobs:
   - task: shine
     config:
       platform: linux
-      image: "docker:///ubuntu"
+      image: "docker:///alpine"
       run:
         path: sleep
         args: [10]
@@ -107,7 +107,7 @@ jobs:
   - task: shine
     config:
       platform: linux
-      image: "docker:///ubuntu"
+      image: "docker:///alpine"
       run:
         path: sleep
         args: [59]
