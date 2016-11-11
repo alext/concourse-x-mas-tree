@@ -1,10 +1,10 @@
 resources:
-- name: x
+- name: 'x'
   type: time
   source:
     interval: 20s
   check_every: 20s
-- name: y
+- name: 'y'
   type: time
   source:
     interval: 2000h
@@ -12,7 +12,7 @@ jobs:
 - name: +
   serial: true
   plan:
-  - get: x
+  - get: 'x'
     trigger: true
   - task: shine
     config:
@@ -23,9 +23,9 @@ jobs:
 - name: +=+=+=
   serial: true
   plan:
-  - get: x
+  - get: 'x'
     trigger: true
-  - get: y
+  - get: 'y'
   - task: shine
     config:
       platform: linux
@@ -36,9 +36,9 @@ jobs:
 - name: =+=+=+=+=+=
   serial: true
   plan:
-  - get: x
+  - get: 'x'
     trigger: true
-  - get: y
+  - get: 'y'
   - task: shine
     config:
       platform: linux
@@ -49,9 +49,9 @@ jobs:
 - name: +=+=+=+=+=+=+=+=+
   serial: true
   plan:
-  - get: x
+  - get: 'x'
     trigger: true
-  - get: y
+  - get: 'y'
   - task: shine
     config:
       platform: linux
@@ -62,9 +62,9 @@ jobs:
 - name: =+=+=+=+=+=+=+=+=+=+=+
   serial: true
   plan:
-  - get: x
+  - get: 'x'
     trigger: true
-  - get: y
+  - get: 'y'
   - task: shine
     config:
       platform: linux
@@ -75,9 +75,9 @@ jobs:
 - name: +=+=+=+=+=+=+=+=+=+=+=+=+=+=
   serial: true
   plan:
-  - get: x
+  - get: 'x'
     trigger: true
-  - get: y
+  - get: 'y'
   - task: shine
     config:
       platform: linux
@@ -88,9 +88,9 @@ jobs:
 - name: =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
   serial: true
   plan:
-  - get: x
+  - get: 'x'
     trigger: true
-  - get: y
+  - get: 'y'
     trigger: true
   - task: shine
     config:
@@ -102,7 +102,7 @@ jobs:
 - name: +++
   serial: true
   plan:
-  - get: y
+  - get: 'y'
     trigger: true
   - task: shine
     config:
